@@ -1,0 +1,103 @@
+<div class="container">
+    <div ng-show="$root.usuarioLogado == null">
+        <hr>
+        <h4>{{$root.msg}}</h4>
+        <hr>
+        <main role="main" class="container">
+            <div class="row">
+                <div class="col-md-8 blog-main"> 
+
+                    <div class="blog-post">
+                        <p class="blog-post-meta">Projeto C#</p>
+                        <a href="dowload/Pizzaria.zip" target="parent"><INPUT TYPE=BUTTON id="bot" NAME="Bot&atilde;o de press&atilde;o 2" VALUE="Pizzaria" ></a></TD>
+                        <h2 class="blog-post-title">Sistema de Sercretaria</h2>
+                        <p class="blog-post-meta">Equipe 06, setembro 2018.</p>
+
+                        <p>Sistema de Controle de secretaria escolar via Web, 
+                            com nivel de acesso ao usuario.</p>
+                        <ul>
+                            <li>Controlar Acesso.</li>
+                            <li>Disponibilizar conteudo.</li>
+                            <li>Consulta de Notas</li>
+                        </ul>
+
+                    </div><!-- /Descrição -->
+                    <div class="blog-post"><!-- /Usuarios Teste  -->
+                        <h4>USUARIOS TESTE</h4>
+                        <ul> ADMIN                            
+                            <li>
+                                Usuario:Eli111 Senha:123
+                            </li>
+                        </ul>
+                        <ul> ALN                            
+                            <li>
+                                Usuario:Jos885 Senha:123
+                            </li>
+                        </ul>
+                        <ul> PFR                            
+                            <li>
+                                Usuario:And333 Senha:123
+                            </li>
+                        </ul>
+                        <ul> SEC                            
+                            <li>
+                                Usuario:Luc222 Senha:123
+                            </li>
+                        </ul>
+                    </div>
+                    <div><!--Imagem-->
+                        <h3>Diagrama de Classe</h3>
+                        <img src="img/Mer_TCC.png" alt="Diagrama" width="100%" height="345">              
+                    </div>
+
+                    <div><!--Imagem-->
+                        <h3>Scrun</h3>
+                        <img src="" width="100%" height="345">              
+                    </div>
+
+                </div><!-- /.Corpo -->
+
+                <aside class="col-md-4 blog-sidebar">
+                    <div class="p-3 mb-3 bg-light rounded">
+                        <h4 class="font-italic">Banco de Dados</h4>
+                        <p class="mb-0">Mysql Versão 8.0.13.</p>
+                        <img src="img/Mysql.png" width="50%" height="80">    
+                        <h4 class="font-italic">Linguagem Programação</h4>
+                        <p class="mb-0">Java EE</p>
+                        <img src="img/Java.jpg" width="50%" height="80">    
+                    </div>
+
+                    <div class="p-3">
+                        <h4 class="font-italic">Histórico</h4>
+                        <ol class="list-unstyled mb-0">
+                            <li><a href="#">Agosto 2018</a></li>
+                            <li><a href="#">Setembro 2018</a></li>
+                            <li><a href="#">Outubro 2018</a></li>
+                            <li><a href="#">Novembro 2018</a></li>
+                            <li><a href="#">Dezembro 2018</a></li>                            
+                        </ol>
+                    </div>
+
+                    <div class="p-3">
+                        <h4 class="font-italic">Repositório</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="https://github.com/sisebi">GitHub - Projeto</a></li>                            
+                        </ol>
+                    </div>
+                </aside>
+
+            </div>
+
+        </main><!-- /.container -->
+    </div>
+    <br/>
+
+    <div ng-show="$root.usuarioLogado != null">
+        <h4>Seja bem vindo {{$root.usuarioLogado.pessoa.nome}}</h4>
+        <hr>
+        <div> 
+            <div ng-include="'pages/logado.html'"></div>
+        </div>
+    </div>
+
+</div>
